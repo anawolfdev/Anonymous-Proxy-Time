@@ -1,2 +1,2 @@
-<!-- ![Adalab](_src/assets/images/logo-adalab-80px.png)
-# Evaluación final del Módulo 1  -->
+![Anonymous Proxy](_src/assets/images/cover.jpg)
+# Evaluación final del Módulo 1
