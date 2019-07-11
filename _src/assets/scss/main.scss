@@ -1,0 +1,15 @@
+//core
+@import 'core/variables';
+
+//components
+@import 'components/typography';
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+
+body {
+	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
+	margin: 0;
+	height: 100vh;
+}
