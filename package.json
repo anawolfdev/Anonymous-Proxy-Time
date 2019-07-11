@@ -1,7 +1,7 @@
 {
-	"name": "Evaluación final Módulo 1",
+	"name": "Evaluación final Módulo 1 - Ana Amaro",
 	"version": "2.0.2",
-	"description": "Examén evaluación final módulo 1",
+	"description": "Examén evaluación final módulo 1 - Ana Amaro",
 	"dependencies": {
 		"browser-sync": "^2.26.3",
 		"del": "^3.0.0",
