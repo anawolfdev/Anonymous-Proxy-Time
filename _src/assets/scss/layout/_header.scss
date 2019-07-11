@@ -1,46 +1,78 @@
-.menu_button {
-    background-color: $colorBlue;
-    width: 44px;
-    height: 44px;
-    position: fixed;
-    border: none;
-}
+/* botón de hamburguesa */
 
-.menu {
+.menu_button {
+  background-color: $colorBlue;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  border: none;
+
+  /* tamaño icono hamburguesa */
+
+  &_icon_img {
     width: 16px;
     height: 14px;
+  }
 }
+
+/* hero */
 
 .hero_container {
-    background: url('../images/cover.jpg') center;
-    background-size: cover;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
+  background: url("../images/cover.jpg") center;
+  background-size: cover;
+  height: 100vh;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 
-.hero_title {
+  /* media querie hero-tablet: 768 */
+  @media all and (min-width: 768) {
+    max-width: 768px;
+  }
+
+  /*title: Anonymous Proxy*/
+
+  &_title {
     text-transform: uppercase;
     margin: 0;
     max-width: 290px;
+    line-height: 55px;
+    font-size: 42px;
     color: $colorWhite;
-    @media all and (min-width: 768px) {
-        max-width: 690px;
-    }
-}
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
 
-.text_hero_p {
+    /* media querie tablet: 768 */
+
+    @media all and (min-width: 768px) {
+      max-width: 690px;
+    }
+  }
+  /*descripción de anonymous*/
+  &_p {
     margin-top: 10px;
     color: $colorWhite;
-    @media all and (min-width: 768px) {
-        margin: 20px 0 30px;
-    }
-}
+    font-family: 'Roboto', sans-serif;
 
-.scroll-arrow {
+    @media all and (min-width: 768px) {
+      margin: 20px 0 30px;
+    }
+  }
+
+  &_button_scroll {
+    display: flex;
+    background-color: $colorWhite;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_button_scroll_img {
     width: 20px;
     height: 11.7px;
+  }
 }
