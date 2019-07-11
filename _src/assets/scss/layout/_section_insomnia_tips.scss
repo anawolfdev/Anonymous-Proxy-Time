@@ -1,0 +1,68 @@
+.section_insomnia_container {
+  padding: 30px 15px 45px;
+
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px;
+  }
+  @media all and (min-width: 1280px) {
+    padding: 60px 275px 60px;
+  }
+
+  &_title {
+    font-family: "Roboto", sans-serif;
+    color: $colorLightblue;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  &_article_title {
+    color: $colorBlack;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    text-transform: capitalize;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &_article_p {
+    color: $colorGreybrown;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+
+    @media all and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+}
+
+.button_link_insomnia {
+  text-decoration: none;
+
+  &_go {
+    width: 76px;
+    height: 45px;
+    margin-top: 30px;
+    border-radius: 22.5px;
+    color: $colorOrange;
+    background-color: $colorWhite;
+    border: solid 2px $colorOrange;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+
+  }
+
+  @media all and (min-width: 768px) {
+    width: 91px;
+    height: 45px;
+  }
+  @media all and (min-width: 1280px) {
+    width: 160px;
+  }
+}
