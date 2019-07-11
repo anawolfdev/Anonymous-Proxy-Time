@@ -8,8 +8,10 @@
 @import 'layout/header';
 @import 'layout/footer';
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
-	height: 100vh;
+    margin: 0;
 }

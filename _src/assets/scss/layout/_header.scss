@@ -1,0 +1,46 @@
+.menu_button {
+    background-color: $colorBlue;
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    border: none;
+}
+
+.menu {
+    width: 16px;
+    height: 14px;
+}
+
+.hero_container {
+    background: url('../images/cover.jpg') center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero_title {
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 290px;
+    color: $colorWhite;
+    @media all and (min-width: 768px) {
+        max-width: 690px;
+    }
+}
+
+.text_hero_p {
+    margin-top: 10px;
+    color: $colorWhite;
+    @media all and (min-width: 768px) {
+        margin: 20px 0 30px;
+    }
+}
+
+.scroll-arrow {
+    width: 20px;
+    height: 11.7px;
+}
