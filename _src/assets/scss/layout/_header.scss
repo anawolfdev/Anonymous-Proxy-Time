@@ -1,5 +1,4 @@
 /* botón de hamburguesa */
-
 .menu_button {
   background-color: $colorBlue;
   width: 44px;
@@ -26,12 +25,16 @@
   justify-content: flex-end;
   align-items: center;
 
-  /* media querie hero-tablet: 768 */
+  /* hero-tablet: 768 */
   @media all and (min-width: 768) {
     max-width: 768px;
   }
+  /* hero-desktop: 1280 */
+  @media all and (min-width: 1280) {
+    max-width: 1280px;
+  }
 
-  /*title: Anonymous Proxy*/
+  /*title-Anonymous*/
 
   &_title {
     text-transform: uppercase;
@@ -41,25 +44,42 @@
     font-size: 42px;
     color: $colorWhite;
     text-align: center;
-    font-family: "Roboto Slab", serif;
+    font-family: $font-family-primary;
 
-    /* media querie tablet: 768 */
-
+    /* title-tablet: 768 */
     @media all and (min-width: 768px) {
       max-width: 690px;
+      font-size: 80px;
+      line-height: 106px;
+    }
+    /* title-desktop: 1280 */
+    @media all and (min-width: 1280px) {
+      max-width: 730px;
+      font-size: 100px;
+      line-height: 132px;
     }
   }
+
   /*descripción de anonymous*/
   &_p {
     margin-top: 10px;
+    margin-bottom: 45px;
     color: $colorWhite;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-family-secondary;
+    font-size: 16px;
 
+    /* p-table & desktop: 768 & 1280 */
     @media all and (min-width: 768px) {
       margin: 20px 0 30px;
+      font-size: 24px;
+    }
+    @media all and (min-width: 1280px) {
+      margin-bottom: 30px;
+      font-size: 24px;
     }
   }
 
+  /* botón de scroll para enlazar con la sección siguiente */
   &_button_scroll {
     display: flex;
     background-color: $colorWhite;
@@ -68,6 +88,7 @@
     border-radius: 50px;
     justify-content: center;
     align-items: center;
+    margin: 0 auto 53px;
   }
 
   &_button_scroll_img {
