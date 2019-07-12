@@ -1,0 +1,63 @@
+.footer_container {
+    background-color: $colorDarkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0 45px;
+    position: relative;
+    @media all and (min-width: 768px) {
+        padding: 45px 39px 45px;
+        text-align: left;
+    }
+}
+.footer_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    @media all and (min-width: 768px) {
+        padding: 0;
+    }
+}
+.footer_link {
+    text-decoration: none;
+    color: $colorWhite;
+}
+.copyright, .slogan {
+    margin: 0;
+}
+.slogan_heart {
+    color: $colorOrange;
+}
+.footer_button {
+    position: absolute;
+    top: -22px;
+    /* No me sale la transición lenta :(
+    &:active {
+        transition: all ease 0.5s;
+    }
+    */
+}
+.arrow {
+    width: 20.6px;
+    height: 24px;
+}
+.footer_grid_box {
+    @media all and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        width: 100%;
+    }
+    @media all and (min-width: 1280px) {
+        width: auto;
+    }
+}
+.footer_grid_special-item {
+    @media all and (min-width: 768px) {
+        grid-row: 1;
+    }
+}
