@@ -1,3 +1,5 @@
+/* section container */
+
 .section_insomnia_container {
   padding: 30px 15px 45px;
 
@@ -8,37 +10,55 @@
     padding: 60px 275px 60px;
   }
 
+  /* title insomnia */
   &_title {
-    font-family: "Roboto", sans-serif;
+    font-family: $fontSecondary;
     color: $colorLightblue;
     font-size: 14px;
     text-transform: capitalize;
     margin: 0;
+    line-height: 30px;
+
+    @media all and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 
+  /* title Looking */
   &_article_title {
     color: $colorBlack;
     font-size: 24px;
-    font-family: "Roboto Slab", serif;
+    font-family: $fontPrimary;
+    line-height: 30px;
     margin: 0;
     text-transform: capitalize;
 
     @media all and (min-width: 768px) {
       margin-bottom: 30px;
+      font-size: 26px;
+      line-height: 45px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
+      line-height: 45px;
     }
   }
 
+  /* párrafo */
   &_article_p {
     color: $colorGreybrown;
     font-size: 18px;
-    font-family: "Roboto", sans-serif;
+    font-family: $fontSecondary;
+    line-height: 30px;
 
     @media all and (min-width: 768px) {
       margin: 0;
+      font-size: 20px;
     }
   }
 }
 
+/* Go button */
 .button_link_insomnia {
   text-decoration: none;
 
@@ -54,8 +74,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto", sans-serif;
-
+    font-family: $fontSecondary;
+    transition: transform ease 1s, background-color ease 1s,
+      color ease 1s;
+    &:hover {
+      transform: rotate(360deg);
+      background-color: $colorOrange;
+      color: $colorWhite;
+    }
   }
 
   @media all and (min-width: 768px) {
@@ -64,5 +90,6 @@
   }
   @media all and (min-width: 1280px) {
     width: 160px;
+    height: 45px;
   }
 }

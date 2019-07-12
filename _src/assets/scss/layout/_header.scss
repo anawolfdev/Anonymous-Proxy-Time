@@ -44,7 +44,7 @@
     font-size: 42px;
     color: $colorWhite;
     text-align: center;
-    font-family: $font-family-primary;
+    font-family: $fontPrimary;
 
     /* title-tablet: 768 */
     @media all and (min-width: 768px) {
@@ -65,7 +65,7 @@
     margin-top: 10px;
     margin-bottom: 45px;
     color: $colorWhite;
-    font-family: $font-family-secondary;
+    font-family: $fontSecondary;
     font-size: 16px;
 
     /* p-table & desktop: 768 & 1280 */
