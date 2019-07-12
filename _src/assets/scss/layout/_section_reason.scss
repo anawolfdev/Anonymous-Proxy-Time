@@ -70,11 +70,14 @@
   /* More reasons button */
 
   .section_reasons_container_button {
+    width: 100%;
+    grid-column: span 3;
 
     &_reasons {
+      margin: auto;
       width: 184px;
       height: 45px;
-      margin-top: 30px;
+      /*margin-top: 30px;*/
       border-radius: 22.5px;
       text-decoration: none;
       color: $colorWhite;
@@ -94,11 +97,9 @@
     }
 
     @media all and (min-width: 768px) {
-      width: 91px;
       height: 45px;
     }
     @media all and (min-width: 1280px) {
-      width: 160px;
       height: 45px;
     }
   }
