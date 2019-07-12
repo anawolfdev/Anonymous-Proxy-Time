@@ -1,0 +1,53 @@
+.section_reasons_container {
+  background-color: $colorIceblue;
+  padding: 30px 15px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    padding: 30px 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 0 30px;
+  }
+  &_title {
+    text-transform: capitalize;
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: $colorBlack;
+    margin-bottom: 45px;
+    @media all and (min-width: 768px) {
+      grid-column: 1/4;
+      grid-row: 1/2;
+      text-align: center;
+      font-size: 26px;
+      line-height: 45px;
+    }
+  }
+
+  &_1_title {
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    color: $colorBlack;
+    line-height: 30px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &_1_p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorBlack;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}
