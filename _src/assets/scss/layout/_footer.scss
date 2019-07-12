@@ -1,63 +1,109 @@
 .footer_container {
-    background-color: $colorDarkblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 60px 0 45px;
-    position: relative;
-    @media all and (min-width: 768px) {
-        padding: 45px 39px 45px;
-        text-align: left;
-    }
+  background-color: $colorDarkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0 45px;
+  position: relative;
+  @media all and (min-width: 768px) {
+    padding: 45px 39px 45px;
+    text-align: left;
+  }
 }
+
+.footer_grid_box {
+  @media all and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    width: 100%;
+  }
+  @media all and (min-width: 1280px) {
+    width: auto;
+  }
+}
+
 .footer_list {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
+  text-transform: uppercase;
+  @media all and (min-width: 768px) {
     padding: 0;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-    @media all and (min-width: 768px) {
-        padding: 0;
-    }
+  }
 }
 .footer_link {
-    text-decoration: none;
-    color: $colorWhite;
+  text-decoration: none;
+  color: $colorWhite;
 }
+
 .copyright, .slogan {
-    margin: 0;
+  margin: 0;
 }
 .slogan_heart {
-    color: $colorOrange;
+  color: $colorOrange;
 }
+
+
 .footer_button {
-    position: absolute;
-    top: -22px;
-    /* No me sale la transición lenta :(
-    &:active {
-        transition: all ease 0.5s;
-    }
-    */
+  position: absolute;
+  top: -22px;
 }
 .arrow {
-    width: 20.6px;
-    height: 24px;
+  width: 20.6px;
+  height: 24px;
 }
-.footer_grid_box {
+
+.footer_grid_special-item {
+  @media all and (min-width: 768px) {
+    grid-row: 1;
+  }
+
+.scroll_arrow_container {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 4px 0 $colorBlackOp;
+  }
+  .special_scroll_button {
+    margin: 53px 0;
     @media all and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px;
-        width: 100%;
+      margin: 0 0 35px 0;
     }
     @media all and (min-width: 1280px) {
-        width: auto;
+      margin-bottom: 13px;
     }
-}
-.footer_grid_special-item {
-    @media all and (min-width: 768px) {
-        grid-row: 1;
+  }
+  .special_arrow_button {
+    box-shadow: 0 0 10px 0 $colorBlackOp;
+    animation-name: dinamic-button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    &:hover {
+      width: 55px;
+      height: 55px;
+      position: relative;
+      top: -10px;
+      box-shadow: 0 0 10px 0 $colorWhite;
     }
+  }
+  @keyframes dinamic-button {
+    0% {
+      margin-top: -20px;
+    }
+    50% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: -20px;
+    }
+  }
 }
