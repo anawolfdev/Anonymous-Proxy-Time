@@ -1,0 +1,44 @@
+.footer_container {
+  padding: 60px 0 45px;
+  background-color: $colorDarkblue;
+  position: relative;
+
+  &_articles_list,
+  &_social_networks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-align: center;
+    &_item {
+      &_text {
+        text-decoration: none;
+        color: $colorWhite;
+        font-family: $fontSecondary;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &_copy {
+    &_p {
+      margin: 0;
+      color: $colorWhite;
+      font-size: 14px;
+      line-height: 30px;
+      font-family: $fontSecondary;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      &_heart {
+        color: $colorOrange;
+      }
+    }
+  }
+}
