@@ -27,6 +27,8 @@
   }
 
   &_copy {
+    display: flex;
+    flex-direction: column-reverse;
     &_p {
       margin: 0;
       color: $colorWhite;
@@ -43,14 +45,17 @@
   }
 
   &_button {
+    display: none;
+    background-color: $colorWhite;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 37px;
+    transform: translateY(-80px);
+    @media all and (min-width: 768px) {
       display: flex;
-      background-color: $colorWhite;
-      width: 45px;
-      height: 45px;
-      border-radius: 50px;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto 37px;
-      transform: translateY(-80px)
     }
+  }
 }
